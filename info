@@ -7,3 +7,14 @@ pnpx create-mf-app
 start app: install dependencies and dn start
 npm i && npm start
 
+
+what is imported to d remote section of anoda app:
+http://localhost:3000/remoteEntry.js
+
+
+deploy/build:
+npm run build 
+cd ./dist
+PORT=3000 npx servor
+
+
