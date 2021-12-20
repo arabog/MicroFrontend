@@ -1,0 +1,9 @@
+installation:
+npm install -g pnpm
+
+create app:
+pnpx create-mf-app
+
+start app: install dependencies and dn start
+npm i && npm start
+
