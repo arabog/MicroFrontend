@@ -5,7 +5,8 @@ create app:
 pnpx create-mf-app
 
 start app: install dependencies and dn start
-npm i && npm start
+npm i 
+npm start
 
 
 what is imported to d remote section of anoda app:
@@ -16,5 +17,9 @@ deploy/build:
 npm run build 
 cd ./dist
 PORT=3000 npx servor
+
+
+cr8ing server:
+pnpx create-mf-app
 
 
