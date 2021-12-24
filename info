@@ -21,5 +21,10 @@ PORT=3000 npx servor
 
 cr8ing server:
 pnpx create-mf-app
+to run server:
+npm run start
+
+after changing unauthorized:
+npm run start:dev
 
 

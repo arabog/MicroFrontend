@@ -4,9 +4,9 @@ import ReactDOM from "react-dom";
 
 import "./index.scss";
 
-// import Header from "home/Header";
-const Header = React.lazy(() => import( "home/Header"));
+// const Header = React.lazy(() => import( "home/Header"));
 
+import Header from "home/Header";
 import Footer from "home/Footer";
 
 // import SafeComponent from "./SafeComponent";
