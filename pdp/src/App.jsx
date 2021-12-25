@@ -2,6 +2,7 @@ import React from "react";
 // { Suspense, useState } 
 import ReactDOM from "react-dom";
 
+import "remixicon/fonts/remixicon.css";
 import "./index.scss";
 
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
@@ -10,6 +11,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
 
 import Header from "home/Header";
 import Footer from "home/Footer";
+
 
 import SafeComponent from "./SafeComponent";
 
