@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from 'react'
-
-import { getProductById, currency } from "home/products"
+import React, { useState, useEffect, useRef } from 'react'
 
 import { useParams } from "react-router-dom"
 
+import { getProductById, currency } from "home/products"
+import placeAddToCart from "addtocart/placeAddToCart"
 
 const PDPContent = () => {
           const { id } = useParams();
@@ -19,6 +19,14 @@ const PDPContent = () => {
                               setProduct(null)
                     }
           }, [id])
+
+          const addToCart = useRef(null)
+
+          useEffect(() => {
+                    if(addToCart.current) {
+                              placeAddToCart(addToCart.current, product.id)
+                    }
+          }, [product])
 
           if(!product) return null;
 
@@ -37,6 +45,8 @@ const PDPContent = () => {
                                                             {currency.format(product.price)}
                                                   </div>
                                         </div>
+
+                                        <div ref={addToCart}></div>
 
                                         <div className="mt-10">{product.description}</div>
                                         <div className="mt-10">{product.longDescription}</div>
