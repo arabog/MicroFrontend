@@ -27,4 +27,9 @@ npm run start
 after changing unauthorized:
 npm run start:dev
 
+testing: installing jest and testing lib as dev-dep
+npm install --save-dev jest
+npm i --save-dev @testing-library/react-hooks
+
+
 
